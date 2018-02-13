@@ -556,7 +556,7 @@
 					}
 					//vytvoreni markeru, radku v tabulce atd
 					radekTabulky(jmeno, id, delka);
-					znacka(bod, jmeno, clenove, delka, st, kl, id);
+					znacka(bod, jmeno, clenove, delka, vprofil, blogpost, st, kl, id);
 					var kmTemp = document.getElementById("km").textContent;
 					kmTemp = Number(kmTemp);
 					document.getElementById("km").innerHTML = kmTemp + delka;
@@ -568,12 +568,12 @@
 					done();
 				}
 			}
-			function znacka(center, name, clenove, delka, st, kl, id) {
+			function znacka(center, name, clenove, delka, vprofil, blogpost, st, kl, id) {
 				var c = new SMap.Card();
 				c.getHeader().innerHTML = name;
-				c.getBody().innerHTML = "<hr>";
+				c.getBody().innerHTML = "<hr>" + blogpost;
 				c.getFooter().style.margin = "5px 0px";
-				var obsah = "Jak jsme putovali: <b>" + clenove + "</b><br>Usli jsme: <b>" + delka + " km</b><br>Stoupani: <b>" + st + " m</b> a klesani <b>" + kl + " m</b>";
+				var obsah = "Jak jsme putovali: <b>" + clenove + "</b><br>Usli jsme: <b>" + delka + " km</b><br>Blog: <b>" + blogpost;
 				c.getFooter().innerHTML = obsah;
 				var marker = new SMap.Marker(center, id);/* Znacka s danym umistenim*/
 				marker.decorate(SMap.Marker.Feature.Card, c);

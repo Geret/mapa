@@ -521,7 +521,7 @@
 					var vprofil = `<img src='${link}'>`;
 					var tagb = xmlDoc.getElementsByTagName("blog"); //pridani linku
 					var linkb = tagb[0].textContent;
-					var blogpost = `<a href='${linkb}'>Blog post</a>`;
+					var blogpost = `<a href='${linkb}'>Link</a>`;
 					var keywords = xmlDoc.getElementsByTagName("keywords")[0];
 					if (keywords !== undefined) {
 						var clenove = xmlDoc.getElementsByTagName("keywords")[0].textContent;
@@ -574,7 +574,7 @@
 				c.getHeader().innerHTML = name;
 				c.getBody().innerHTML = "<hr>" + vprofil;
 				c.getFooter().style.margin = "5px 0px";
-				var obsah = "Jak jsme putovali: <b>" + clenove + "</b><br>Urazili jsme: <b>" + delka + " km</b><br>Blog: " + blogpost;
+				var obsah = "Jak jsme putovali: <b>" + clenove + "</b><br>Urazili jsme: <b>" + delka + " km</b><br>Výlet na blogu: " + blogpost;
 				c.getFooter().innerHTML = obsah;
 				var marker = new SMap.Marker(center, id);/* Znacka s danym umistenim*/
 				marker.decorate(SMap.Marker.Feature.Card, c);

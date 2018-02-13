@@ -8,14 +8,17 @@
  xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
  xmlns:locus="http://www.locusmap.eu">
-<metadata>
-   <name>20171014 - Knezna Kaca III</name>
-   <keywords>Koloběžky</keywords>
-   <desc xmlns="">35</desc>
-   <image></image>
-   <blog>http://geret.net/krajem-knezny-kaci-iii-po-hranicich-lamberskeho-panstvi/</blog>
- </metadata>
+
 <trk>
+<name>2017-10-14 Kněžna Káča 03</name>
+	<extensions>
+		<gpx_style:line>
+			<gpx_style:color>D500FF</gpx_style:color>
+			<gpx_style:opacity>0.59</gpx_style:opacity>
+			<gpx_style:width>4.0</gpx_style:width>
+		</gpx_style:line>
+		<locus:activity>cycling</locus:activity>
+	</extensions>
 <trkseg>
 <trkpt lat="49.215772" lon="13.630865">
 	<ele>588.50</ele>

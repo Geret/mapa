@@ -176,8 +176,8 @@
 				}
 			}
 			var seznamTras = [
-				{url: "/20131222 - KOPR.gpx"},
-				{url: "/20140329 - Vejprnické kolečko.gpx"}
+				//{url: "/20131222 - KOPR.gpx"},
+				//{url: "/20140329 - Vejprnické kolečko.gpx"}
 				//{url: "/20140426 - Vejprnické kolečko II.gpx"},
 				//{url: "/20140427 - Stříbro-Vejprnice.gpx"},
 				//{url: "/20140430 - Signalka I.gpx"},
@@ -242,6 +242,8 @@
 				//{url: "/20160709 - Wimbachklamm.gpx"},
 				//{url: "/20160710 - Konigsee a Obersee.gpx"},
 				//{url: "/20160711 - Weisbachtal.gpx"}
+				{url: "/20170806 - Knezna Kaca 2.gpx"},
+				{url: "/20171014 - Knezna Kaca 3.gpx"}
 
 
 							];
@@ -514,9 +516,12 @@
 					}
 					var lat = xmlDoc.getElementsByTagName("trkpt")[0].getAttribute("lat");
 					var lon = xmlDoc.getElementsByTagName("trkpt")[0].getAttribute("lon");
-					//var tag = xmlDoc.getElementsByTagName("image"); //pridani obrazku
-					//var link = tag[0].textContent;
-					//var vprofil = `<img src='${link}'>`;
+					var tag = xmlDoc.getElementsByTagName("image"); //pridani obrazku
+					var link = tag[0].textContent;
+					var vprofil = `<img src='${link}'>`;
+					var tagb = xmlDoc.getElementsByTagName("blog"); //pridani linku
+					var linkb = tagb[0].textContent;
+					var blogpost = `<a href='${linkb}'>Blog post</a>`;
 					var keywords = xmlDoc.getElementsByTagName("keywords")[0];
 					if (keywords !== undefined) {
 						var clenove = xmlDoc.getElementsByTagName("keywords")[0].textContent;

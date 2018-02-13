@@ -570,6 +570,7 @@
 			}
 			function znacka(center, name, clenove, delka, vprofil, blogpost, st, kl, id) {
 				var c = new SMap.Card();
+				c.setSize(435, 345);
 				c.getHeader().innerHTML = name;
 				c.getBody().innerHTML = "<hr>" + vprofil;
 				c.getFooter().style.margin = "5px 0px";

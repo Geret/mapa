@@ -8,8 +8,14 @@
  xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
  xmlns:locus="http://www.locusmap.eu">
+ <metadata>
+   <name>20170806 - Knezna Kaca II</name>
+   <keywords>Koloběžky</keywords>
+   <desc xmlns="">43</desc>
+   <image></image>
+   <blog>http://geret.net/krajem-knezny-kaci-za-davnych-casu-a-jejich-casomereni/</blog>
+ </metadata>
 	<trk>
-<name>2017-08-06 Kněžna Káča 02</name>
 	<trkseg>
 <trkpt lat="49.322688" lon="13.698633">
 	<ele>474.01</ele>

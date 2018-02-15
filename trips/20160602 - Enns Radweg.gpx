@@ -7,8 +7,8 @@
     <metadata>
       <name>20160602 - Enns Radweg</name>
       <keywords>Koloběžky</keywords>
-      <desc xmlns="">47</desc>
-      <image></image>
+      <desc xmlns="">296</desc>
+      <image>http://geret.net/trasy/profily/enns_vp.png</image>
       <blog></blog>
     </metadata>
     <trk>
@@ -9367,7 +9367,7 @@
         </trkseg>
     </trk>
     <trk>
-      <name>20160603 - Enns Radweg II</name>
+      <name>Enns Radweg Den 2. - 63 km</name>
       <trkseg>
           <trkpt lat="47.441965" lon="13.937401">
               <time>2016-06-03T06:57:50Z</time>
@@ -22682,7 +22682,7 @@
       </trkseg>
   </trk>
   <trk>
-    <name>20160604 - Enns Radweg III</name>
+    <name>Enns Radweg Den 3. - 43 km</name>
     <trkseg>
         <trkpt lat="47.568523" lon="14.422836">
             <time>2016-06-04T05:42:07Z</time>
@@ -31665,7 +31665,7 @@
     </trkseg>
 </trk>
 <trk>
-  <name>20160605 - Enns Radweg IV</name>
+  <name>Enns Radweg Den 4. - 46 km</name>
   <trkseg>
   <trkpt lat="47.649830" lon="14.763120">
   	<ele>565.00</ele>
@@ -55555,7 +55555,7 @@
   </trkseg>
   </trk>
   <trk>
-    <name>20160606 - Enns Radweg V</name>
+    <name>Enns Radweg Den 5. - 97 km</name>
     <trkseg>
     <trkpt lat="47.800643" lon="14.478364">
     	<ele>558.00</ele>

@@ -7,7 +7,7 @@
     <metadata>
       <name>20140430 - Signálka</name>
       <keywords>Koloběžky</keywords>
-      <desc xmlns="">8</desc>
+      <desc xmlns="">90</desc>
       <image></image>
       <blog></blog>
     </metadata>
@@ -1768,7 +1768,7 @@
         </trkseg>
     </trk>
     <trk>
-    <name>20140501 - Signálka II</name>
+    <name>Signálka Den 2. - 28 km</name>
     <trkseg>
         <trkpt lat="49.967832" lon="12.50173">
             <time>2014-05-01T07:45:16Z</time>
@@ -7617,7 +7617,7 @@
     </trkseg>
 </trk>
 <trk>
-  <name>20140502 - Signálka III</name>
+  <name>Signálka Den 3. - 29 km</name>
   <trkseg>
       <trkpt lat="49.827396" lon="12.523673">
           <time>2014-05-02T07:12:56Z</time>
@@ -13850,7 +13850,7 @@
   </trkseg>
 </trk>
 <trk>
-  <name>20140503 - Signálka IV</name>
+  <name>Signálka den 4. - 25 km</name>
   <trkseg>
       <trkpt lat="49.721599" lon="12.471548">
           <time>2014-05-03T06:54:13Z</time>
@@ -19079,5 +19079,5 @@
           </ele>
       </trkpt>
   </trkseg>
-</trk>   
+</trk>
 </gpx>

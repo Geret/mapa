@@ -218,6 +218,7 @@
 				{url: "/20160709 - Wimbachklamm.gpx"},
 				{url: "/20160710 - Konigsee a Obersee.gpx"},
 				{url: "/20160711 - Weisbachtal.gpx"},
+				{url: "/20170625 - Mur Drau Radweg.gpx"},
 				{url: "/20170806 - Knezna Kaca 2.gpx"},
 				{url: "/20171014 - Knezna Kaca 3.gpx"}
 
@@ -564,7 +565,7 @@
 				if (checkboxSpani.checked) {
 					var xhr = new JAK.Request(JAK.Request.XML);
 					xhr.setCallback(window, "kempy");
-					xhr.send("http://geret.net/trasy/new/nocoviste.gpx");
+					xhr.send("https://geret.net/trasy/new/nocoviste.gpx");
 				} else {
 					m.getLayer("spaniVrstva").removeAll();
 				}

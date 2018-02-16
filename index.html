@@ -266,9 +266,9 @@
 					var k = '<tbody>';
 					for(i = 0;i < obj.length; i++){
 						if (table !== "lidiTab" || obj[i].trips > 2) {//nezobrazuju lidi pouze s jednim vyletem
-							k += '<tr onclick="hideTrips([' + obj[i].ids + '])">';
+							k += '<tr onclick="hideTrips(this, [' + obj[i].ids + '])">';
 						} else {
-							k += '<tr onclick="hideTrips([' + obj[i].ids + '])" class="hideable hidden">';
+							k += '<tr onclick="hideTrips(this, [' + obj[i].ids + '])" class="hideable hidden">';
 						}
 						k += '<td>' + obj[i].osoba + ':</td>';
 						k += '<td>' + obj[i].trips + '</td>';
@@ -298,8 +298,8 @@
 					showMoreButton.innerHTML = "Skryj lidi se 2 vylety";
 				}
 			}
-			function hideTrips(except) {
-				event.srcElement.parentElement.classList.add("grey");
+			function hideTrips(el, except) {
++				el.classList.add("grey");
 				var multiLayers = multi.getLayers();
 				except = except.toString().split(',');
 				for(i = 0; i < multiLayers.length; i++) {
@@ -596,7 +596,7 @@
 				if (checkboxSpani.checked) {
 					var xhr = new JAK.Request(JAK.Request.XML);
 					xhr.setCallback(window, "kempy");
-					xhr.send("https://geret.net/trasy/new/nocoviste.gpx");
+					xhr.send("http://geret.net/trasy/new/nocoviste.gpx");
 				} else {
 					m.getLayer("spaniVrstva").removeAll();
 				}

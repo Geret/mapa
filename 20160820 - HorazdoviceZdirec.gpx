@@ -8,26 +8,15 @@
  xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
  xmlns:locus="http://www.locusmap.eu">
-	<metadata>
-		<desc>File with points/tracks from Locus Map/3.18.6</desc>
-	</metadata>
+ <metadata>
+   <name>20170429 - Kokořínsko</name>
+   <keywords>Koloběžky</keywords>
+   <desc xmlns="">24</desc>
+   <image>http://geret.net/trasy/profily/kokorinsko_vp.png</image>
+   <blog>http://geret.net/kokorinsko/</blog>
+ </metadata>
 <trk>
 <name>2016-08-20 - Horažďovice-Ždírec</name>
-<desc><![CDATA[<br /><br /><font color="black"><table width="100%"><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Délka</b></small></td><td align="center" valign="center">48.1 km</td></tr>
-<tr><td align="left" valign="center"><small><b>Body</b></small></td><td align="center" valign="center">2373</td></tr>
-<tr><td align="left" valign="center"><small><b>Vytvořeno</b></small></td><td align="center" valign="center">2016-08-20 08:23:57</td></tr>
-<tr><td align="left" valign="center"><small><b>Max. rychlost</b></small></td><td align="center" valign="center">41.4 km/h</td></tr>
-</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Vše</td><td align="center" valign="center">Rychlost > 0</td></tr>
-<tr><td align="left" valign="center"><small><b>Prům. rychlost</b></small></td><td align="center" valign="center">5.6 km/h</td><td align="center" valign="center">11.2 km/h</td></tr>
-<tr><td align="left" valign="center"><small><b>Čas trasy</b></small></td><td align="center" valign="center">8h:38m</td><td align="center" valign="center">4h:14m</td></tr>
-</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Min. výška</b></small></td><td align="center" valign="center">454 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Max. výška</b></small></td><td align="center" valign="center">668 m</td></tr>
-</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Převýšení</td><td align="center" valign="center">Vzdálenost</td></tr>
-<tr><td align="left" valign="center"><small><b>Stoupání</b></small></td><td align="center" valign="center">959 m</td><td align="center" valign="center">14309 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Klesání</b></small></td><td align="center" valign="center">-965 m</td><td align="center" valign="center">16412 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Rovina</b></small></td><td align="center" valign="center">0 m</td><td align="center" valign="center">17455 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Celkem</b></small></td><td align="center" valign="center">1923 m</td><td align="center" valign="center">48176 m</td></tr>
-</table></td></tr></table></font>]]></desc>
 	<trkseg>
 <trkpt lat="49.331268" lon="13.738698">
 	<ele>474.00</ele>

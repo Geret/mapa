@@ -8,26 +8,15 @@
  xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
  xmlns:locus="http://www.locusmap.eu">
-	<metadata>
-		<desc>File with points/tracks from Locus Map/3.18.9</desc>
-	</metadata>
+ <metadata>
+   <name>20170429 - Kokořínsko</name>
+   <keywords>Koloběžky</keywords>
+   <desc xmlns="">24</desc>
+   <image>http://geret.net/trasy/profily/kokorinsko_vp.png</image>
+   <blog>http://geret.net/kokorinsko/</blog>
+ </metadata>
 <trk>
 <name>2016-09-04 - Železná-Tachov</name>
-<desc><![CDATA[<br /><br /><font color="black"><table width="100%"><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Délka</b></small></td><td align="center" valign="center">41.2 km</td></tr>
-<tr><td align="left" valign="center"><small><b>Body</b></small></td><td align="center" valign="center">2247</td></tr>
-<tr><td align="left" valign="center"><small><b>Vytvořeno</b></small></td><td align="center" valign="center">2016-09-04 10:08:37</td></tr>
-<tr><td align="left" valign="center"><small><b>Max. rychlost</b></small></td><td align="center" valign="center">46.8 km/h</td></tr>
-</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Vše</td><td align="center" valign="center">Rychlost > 0</td></tr>
-<tr><td align="left" valign="center"><small><b>Prům. rychlost</b></small></td><td align="center" valign="center">8.7 km/h</td><td align="center" valign="center">11.9 km/h</td></tr>
-<tr><td align="left" valign="center"><small><b>Čas trasy</b></small></td><td align="center" valign="center">4h:43m</td><td align="center" valign="center">3h:27m</td></tr>
-</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Min. výška</b></small></td><td align="center" valign="center">527 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Max. výška</b></small></td><td align="center" valign="center">746 m</td></tr>
-</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Převýšení</td><td align="center" valign="center">Vzdálenost</td></tr>
-<tr><td align="left" valign="center"><small><b>Stoupání</b></small></td><td align="center" valign="center">908 m</td><td align="center" valign="center">12859 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Klesání</b></small></td><td align="center" valign="center">-957 m</td><td align="center" valign="center">15711 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Rovina</b></small></td><td align="center" valign="center">0 m</td><td align="center" valign="center">12756 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Celkem</b></small></td><td align="center" valign="center">1865 m</td><td align="center" valign="center">41325 m</td></tr>
-</table></td></tr></table></font>]]></desc>
 	<trkseg>
 <trkpt lat="49.585762" lon="12.587730">
 	<ele>577.00</ele>

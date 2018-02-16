@@ -8,26 +8,15 @@
  xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
  xmlns:locus="http://www.locusmap.eu">
-	<metadata>
-		<desc>File with points/tracks from Locus Map/3.18.7</desc>
-	</metadata>
+ <metadata>
+   <name>20170429 - Kokořínsko</name>
+   <keywords>Koloběžky</keywords>
+   <desc xmlns="">24</desc>
+   <image>http://geret.net/trasy/profily/kokorinsko_vp.png</image>
+   <blog>http://geret.net/kokorinsko/</blog>
+ </metadata>
 <trk>
 <name>2016-08-26 - Manětínská tma</name>
-<desc><![CDATA[<br /><br /><font color="black"><table width="100%"><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Délka</b></small></td><td align="center" valign="center">6.2 km</td></tr>
-<tr><td align="left" valign="center"><small><b>Body</b></small></td><td align="center" valign="center">581</td></tr>
-<tr><td align="left" valign="center"><small><b>Vytvořeno</b></small></td><td align="center" valign="center">2016-08-26 22:23:52</td></tr>
-<tr><td align="left" valign="center"><small><b>Max. rychlost</b></small></td><td align="center" valign="center">10.0 km/h</td></tr>
-</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Vše</td><td align="center" valign="center">Rychlost > 0</td></tr>
-<tr><td align="left" valign="center"><small><b>Prům. rychlost</b></small></td><td align="center" valign="center">2.9 km/h</td><td align="center" valign="center">4.4 km/h</td></tr>
-<tr><td align="left" valign="center"><small><b>Čas trasy</b></small></td><td align="center" valign="center">2h:08m</td><td align="center" valign="center">1h:23m</td></tr>
-</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Min. výška</b></small></td><td align="center" valign="center">436 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Max. výška</b></small></td><td align="center" valign="center">522 m</td></tr>
-</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Převýšení</td><td align="center" valign="center">Vzdálenost</td></tr>
-<tr><td align="left" valign="center"><small><b>Stoupání</b></small></td><td align="center" valign="center">279 m</td><td align="center" valign="center">2842 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Klesání</b></small></td><td align="center" valign="center">-275 m</td><td align="center" valign="center">2384 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Rovina</b></small></td><td align="center" valign="center">0 m</td><td align="center" valign="center">992 m</td></tr>
-<tr><td align="left" valign="center"><small><b>Celkem</b></small></td><td align="center" valign="center">554 m</td><td align="center" valign="center">6219 m</td></tr>
-</table></td></tr></table></font>]]></desc>
 	<trkseg>
 <trkpt lat="49.989656" lon="13.241507">
 	<ele>448.33</ele>

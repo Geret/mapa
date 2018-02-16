@@ -8,7 +8,14 @@
  xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
  xmlns:locus="http://www.locusmap.eu">
-	<trk>
+ <metadata>
+   <name>20170429 - Kokořínsko</name>
+   <keywords>Koloběžky</keywords>
+   <desc xmlns="">24</desc>
+   <image>http://geret.net/trasy/profily/kokorinsko_vp.png</image>
+   <blog>http://geret.net/kokorinsko/</blog>
+ </metadata>
+  <trk>
 <name>2017-06-30 Medvedi souteska</name>
 	<trkseg>
 <trkpt lat="47.331610" lon="15.360338">

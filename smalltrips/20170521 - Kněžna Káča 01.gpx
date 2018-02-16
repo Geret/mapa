@@ -9,14 +9,14 @@
  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
  xmlns:locus="http://www.locusmap.eu">
  <metadata>
-   <name>20170429 - Kokořínsko</name>
+   <name>20170521 - Kněžna Káča I</name>
    <keywords>Koloběžky</keywords>
-   <desc xmlns="">24</desc>
-   <image>http://geret.net/trasy/profily/kokorinsko_vp.png</image>
-   <blog>http://geret.net/kokorinsko/</blog>
+   <desc xmlns="">41</desc>
+   <image>http://geret.net/trasy/profily/kaca1_vp.png</image>
+   <blog>http://geret.net/krajem-knezny-kaci-v-dohledu-hradu-rabi/</blog>
  </metadata>
   <trk>
-<name>2017-05-21 - Kněžna Káča 01.gpx</name>
+<name>2017-05-21 - Kněžna Káča 01</name>
 	<extensions>
 		<gpx_style:line>
 			<gpx_style:color>#96D500FF</gpx_style:color>

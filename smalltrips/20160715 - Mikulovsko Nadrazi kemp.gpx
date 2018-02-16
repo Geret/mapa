@@ -9,11 +9,11 @@
  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
  xmlns:locus="http://www.locusmap.eu">
 	<metadata>
-    <name>2016-07-15 - Mikulovsko I</name>
+    <name>20160715 - Mikulovsko I</name>
     <keywords>Koloběžky</keywords>
     <desc>5</desc>
-    <image>http://geret.net/trasy/profily/kokorinsko_vp.png</image>
-    <blog>http://geret.net/kokorinsko/</blog>
+    <image>http://geret.net/trasy/profily/mukulovsko00_vp.png</image>
+    <blog></blog>
   	</metadata>
 <trk>
 	<trkseg>

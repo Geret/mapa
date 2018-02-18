@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Denicek cest</title>
+		<title>Pěšky nebo bez pedálů - Mapa výletů</title>
 		<meta charset="utf-8" />
 		<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.1.5/async.min.js"></script>
@@ -38,7 +38,9 @@
 			#rokyTab {width: 77px;}
 			.spani {position: absolute; top: 5px; left: 70px; padding: 5px;}
 			.veta {position: absolute; top: 5px; left: 210px; padding: 5px;}
-			.shluk {position: absolute; top: 5px; right: 400px; padding: 5px;}
+			.shluk {position: absolute; top: 5px; right: 320px; padding: 5px;}
+			.markers {position: absolute; top: 5px; right: 300px; padding: 5px;}
+			.flags {position: absolute; top: 5px; right: 400px; padding: 5px;}
 			.selected {background-color: #4CAF50;}
 			.grey {background-color: #A9A9A9;}
 			.red {background-color: #bb6060;}
@@ -65,7 +67,7 @@
 				</div>
 				<div class="veta">Máme za sebou celkem <span id="vylety">0</span> cest a výletů a celkem jsme urazili <span id="km">0</span> kilometrů</div>
 			</div>
-				<div class="shluk">Shlukovač:
+				<div class="shluk">Shlukovač značek:
 					<input type="checkbox" id="shluk" checked="checked">
 				</div>
 			<div class="right">
@@ -176,83 +178,85 @@
 				}
 			}
 			var seznamTras = [
-				{url: "/20131222 - KOPR.gpx"},
-				{url: "/20140329 - Vejprnické kolečko.gpx"},
-				{url: "/20140426 - Vejprnické kolečko II.gpx"},
-				{url: "/20140427 - Stříbro-Vejprnice.gpx"},
-				{url: "/20140430 - Signalka.gpx"},
-				{url: "/20140510 - Blovice-Poříčí.gpx"},
-				{url: "/20140607 - Farmářská stezka.gpx"},
-				{url: "/20140608 - Horní-Dolní.gpx"},
-				{url: "/20140627 - Vizinalbahn a Bockl Radweg.gpx"},
-				{url: "/20140809 - Srní-Sušice.gpx"},
-				{url: "/20150214 - Svojšín.gpx"},
-				{url: "/20150308 - Kotel.gpx"},
-				{url: "/20150411 - Bělá nad Radbůzou-Stříbro.gpx"},
-				{url: "/20150418 - Praha-Beroun.gpx"},
-				{url: "/20150508 - Kravi hora.gpx"},
-				{url: "/20150509 - Z kopca do kopca 01.gpx"},
-				{url: "/20150539 - Z kopca do kopca 02.gpx"},
-				{url: "/20150605 - Paneuropa Radweg.gpx"},
-				{url: "/20150719 - Špičák sjezd.gpx"},
-				{url: "/20150802 - Modrava.gpx"},
-				{url: "/20150913 - Yrtweskalp.gpx"},
-				{url: "/20151003 - Baroko III.gpx"},
-				{url: "/20151011 - Plzenske kolecko.gpx"},
-				{url: "/20151107 - Cesta do touskova.gpx"},
-				{url: "/20151107 - Cesta z Touskova.gpx"},
-				{url: "/20151108 - Baroko I.gpx"},
-				{url: "/20160206 - SvihovVejprnice.gpx"},
-				{url: "/20160213 - Baroko II.gpx"},
-				{url: "/20160313 - Líně.gpx"},
-				{url: "/20160328 - Marianske Lazne.gpx"},
-				{url: "/20160403 - Brdy.gpx"},
-				{url: "/20160422 - Causeway.gpx"},
-				{url: "/20160430 - Plzenske kolecko.gpx"},
-				{url: "/20160514 - Otavská cyklotrasa.gpx"},
-				{url: "/20160602 - Enns Radweg.gpx"},
-			  {url: "/20160625 - karlstejn srbsko.gpx"},
-				{url: "/20160708 - Almbachklam.gpx"},
-				{url: "/20160709 - Hintersee.gpx"},
-				{url: "/20160709 - Königsee.gpx"},
-				{url: "/20160709 - Wimbachklamm.gpx"},
-				{url: "/20160710 - Konigsee a Obersee.gpx"},
-				{url: "/20160711 - Weisbachtal.gpx"},
-				{url: "/20160717 - Mikulovská vinařská cyklotrasa.gpx"},
-				{url: "/20160806 - Strela.gpx"},
-				{url: "/20170415 - Panevropská cyklotrasa CZ final.gpx"},
-				{url: "/20170429 - Kokořínsko.gpx"},
-				{url: "/20170603 - Vandr.gpx"},
-				{url: "/20170625 - Mur Drau Radweg.gpx"},
-				{url: "/20170806 - Knezna Kaca 2.gpx"},
-				{url: "/20171014 - Knezna Kaca 3.gpx"},
-				{url: "/20160715 - Mikulovsko Nadrazi kemp.gpx"},
-				{url: "/20160716 - Putovani po vinarskych stezkach.gpx"},
-				{url: "/20160813 - Houby v Brdech.gpx"},
-				{url: "/20160820 - HorazdoviceZdirec.gpx"},
-				{url: "/20160826 - Manetinska tma.gpx"},
-				{url: "/20160904 - ZeleznaTachov.gpx"},
-				{url: "/20160925 - StodChotesovStod.gpx"},
-				{url: "/20161009 - DomazliceStod.gpx"},
-				{url: "/20161203 - Kolem Plzne svaracek.gpx"},
-				{url: "/20170219 - DobrivStrasice.gpx"},
-				{url: "/20170311 - StodVejprnice.gpx"},
-				{url: "/20170325 - Sudomer.gpx"},
-				{url: "/20170401 - Severni kolecko.gpx"},
-				{url: "/20170409 - Korabska archa.gpx"},
-				{url: "/20170507 - Modre hory.gpx"},
-				{url: "/20170521 - Kněžna Káča 01.gpx"},
-				{url: "/20170528 - Drachensee.gpx"},
-				{url: "/20170611 - BezdruziceGutstejnBezdruzice.gpx"},
-				{url: "/20170617 - Mytina.gpx"},
-				{url: "/20170630 - Medvedi souteska.gpx"},
-				{url: "/20170720 - Kremelna.gpx"},
-				{url: "/20170722 - Stroj casu.gpx"},
-				{url: "/20170809 - Brcalnik.gpx"},
-				{url: "/20170820 - KlatovyVelhartice.gpx"},
-				{url: "/20170826 - Blažejský rybník.gpx"},
+				{url: "/20180217 - 2151.gpx", barva: [barvy.fialova]},
+				{url: "/20171014 - Knezna Kaca 3.gpx", barva: [barvy.fialova2]},
+				{url: "/20171007 - Marketka.gpx"},
 				{url: "/20170827 - HamryOstrý.gpx"},
-				{url: "/20171007 - Marketka.gpx"}
+				{url: "/20170826 - Blažejský rybník.gpx"},
+				{url: "/20170820 - KlatovyVelhartice.gpx"},
+				{url: "/20170809 - Brcalnik.gpx"},
+				{url: "/20170806 - Knezna Kaca 2.gpx", barva: [barvy.ruzova]},
+				{url: "/20170722 - Stroj casu.gpx"},
+				{url: "/20170720 - Kremelna.gpx"},
+				{url: "/20170630 - Medvedi souteska.gpx"},
+				{url: "/20170625 - Mur Drau Radweg.gpx"},
+				{url: "/20170617 - Mytina.gpx"},
+				{url: "/20170611 - BezdruziceGutstejnBezdruzice.gpx"},
+				{url: "/20170603 - Vandr.gpx"},
+				{url: "/20170528 - Drachensee.gpx"},
+				{url: "/20170521 - Kněžna Káča 01.gpx", barva: [barvy.seda]},
+				{url: "/20170507 - Modre hory.gpx"},
+				{url: "/20170429 - Kokořínsko.gpx"},
+				{url: "/20170415 - Panevropská cyklotrasa CZ final.gpx"},
+				{url: "/20170409 - Korabska archa.gpx"},
+				{url: "/20170401 - Severni kolecko.gpx"},
+				{url: "/20170325 - Sudomer.gpx"},
+				{url: "/20170311 - StodVejprnice.gpx"},
+				{url: "/20170219 - DobrivStrasice.gpx", barva: [barvy.oranzova]},
+				{url: "/20161203 - Kolem Plzne svaracek.gpx"},
+				{url: "/20161009 - DomazliceStod.gpx"},
+				{url: "/20160925 - StodChotesovStod.gpx"},
+				{url: "/20160904 - ZeleznaTachov.gpx"},
+				{url: "/20160826 - Manetinska tma.gpx"},
+				{url: "/20160820 - HorazdoviceZdirec.gpx"},
+				{url: "/20160813 - Houby v Brdech.gpx"},
+				{url: "/20160806 - Strela.gpx"},
+				{url: "/20160717 - Mikulovská vinařská cyklotrasa.gpx"},
+				{url: "/20160716 - Putovani po vinarskych stezkach.gpx"},
+				{url: "/20160715 - Mikulovsko Nadrazi kemp.gpx"},
+				{url: "/20160711 - Weisbachtal.gpx"},
+				{url: "/20160710 - Konigsee a Obersee.gpx"},
+				{url: "/20160709 - Wimbachklamm.gpx"},
+				{url: "/20160709 - Königsee.gpx"},
+				{url: "/20160709 - Hintersee.gpx"},
+				{url: "/20160708 - Almbachklam.gpx"},
+				{url: "/20160625 - karlstejn srbsko.gpx"},
+				{url: "/20160602 - Enns Radweg.gpx"},
+				{url: "/20160514 - Otavská cyklotrasa.gpx"},
+				{url: "/20160430 - Plzenske kolecko.gpx", barva: [barvy.ruzova]},
+				{url: "/20160422 - Causeway.gpx"},
+				{url: "/20160403 - Brdy.gpx"},
+				{url: "/20160328 - Marianske Lazne.gpx"},
+				{url: "/20160313 - Líně.gpx"},
+				{url: "/20160213 - Baroko II.gpx"},
+				{url: "/20160206 - SvihovVejprnice.gpx"},
+				{url: "/20151108 - Baroko I.gpx"},
+				{url: "/20151107 - Cesta z Touskova.gpx"},
+				{url: "/20151107 - Cesta do touskova.gpx"},
+				{url: "/20151011 - Plzenske kolecko.gpx", barva: [barvy.seda]},
+				{url: "/20151003 - Baroko III.gpx"},
+				{url: "/20150913 - Yrtweskalp.gpx"},
+				{url: "/20150802 - Modrava.gpx"},
+				{url: "/20150719 - Špičák sjezd.gpx", barva: [barvy.fialova]},
+				{url: "/20150605 - Paneuropa Radweg.gpx"},
+				{url: "/20150539 - Z kopca do kopca 02.gpx"},
+				{url: "/20150509 - Z kopca do kopca 01.gpx"},
+				{url: "/20150508 - Kravi hora.gpx"},
+				{url: "/20150418 - Praha-Beroun.gpx"},
+				{url: "/20150411 - Bělá nad Radbůzou-Stříbro.gpx"},
+				{url: "/20150308 - Kotel.gpx"},
+				{url: "/20150214 - Svojšín.gpx"},
+				{url: "/20140809 - Srní-Sušice.gpx"},
+				{url: "/20140627 - Vizinalbahn a Bockl Radweg.gpx"},
+				{url: "/20140608 - Horní-Dolní.gpx"},
+				{url: "/20140607 - Farmářská stezka.gpx"},
+				{url: "/20140510 - Blovice-Poříčí.gpx"},
+				{url: "/20140430 - Signalka.gpx"},
+				{url: "/20140427 - Stříbro-Vejprnice.gpx"},
+				{url: "/20140426 - Vejprnické kolečko II.gpx"},
+				{url: "/20140329 - Vejprnické kolečko.gpx"},
+				{url: "/20131222 - KOPR.gpx"}
+
 							];
 			function createTable(table, obj) {
 				if (table === "lidiTab") {
@@ -276,7 +280,7 @@
 					}
 					if (table === "lidiTab") {
 						k += '<tr onclick="loadMore()">';
-						k += '<td colspan=2 id = "showMoreButton">Zobraz vsechny</td>';
+						//k += '<td colspan=2 id = "showMoreButton">Zobraz vsechny</td>';
 						k += '</tr>';
 					}
 					k += '</tbody>';
@@ -292,11 +296,11 @@
 				}
 				let hiddenRows = tableLidi.getElementsByClassName("hidden");
 				let showMoreButton = document.getElementById("showMoreButton")
-				if (hiddenRows.length > 0) {
-					showMoreButton.innerHTML = "Zobraz vsechny";
-				} else {
-					showMoreButton.innerHTML = "Skryj lidi se 2 vylety";
-				}
+				//if (hiddenRows.length > 0) {
+					//showMoreButton.innerHTML = "Zobraz vsechny";
+			//	} else {
+				//	showMoreButton.innerHTML = "Skryj lidi se 2 vylety";
+			//	}
 			}
 			function hideTrips(el, except) {
 +				el.classList.add("grey");
@@ -583,7 +587,12 @@
 				c.getFooter().style.margin = "5px 0px";
 				var obsah = "Jak jsme putovali: <b>" + clenove + "</b><br>Urazili jsme: <b>" + delka + " km</b><br>Výlet na blogu: " + blogpost;
 				c.getFooter().innerHTML = obsah;
-				var marker = new SMap.Marker(center, id);/* Znacka s danym umistenim*/
+				//var marker = new SMap.Marker(center, id);/* Znacka s danym umistenim*/
+				var flagopt = {
+        		url:"http://geret.net/trasy/marker3.png",
+        		anchor: {left:15, bottom: 5}
+			}
+				var marker = new SMap.Marker(center, id, flagopt);/* Znacka s danym umistenim*/
 				marker.decorate(SMap.Marker.Feature.Card, c);
 				znacky.addMarker(marker);
 			}
